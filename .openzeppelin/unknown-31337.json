@@ -7,7 +7,7 @@
       "hash": "0xdb7774fc1bc66dfba2fc208d71efeec93f23af752109950ff9712226b6f59f63",
       "type": 2,
       "accessList": [],
-      "blockHash": "0x32a3c193e8e1cb768062a455b607271f2629d44c09fa094378b36eaf7e401fbd",
+      "blockHash": "0x3552eb182dfaae08195b78c8c4ee6185250a548ce3542c718fab9b4ab36ffeac",
       "blockNumber": 2,
       "transactionIndex": 0,
       "confirmations": 1,
@@ -59,31 +59,86 @@
             "contract": "ERC20",
             "label": "_balances",
             "type": "t_mapping(t_address,t_uint256)",
-            "src": "contracts/ERC20.sol:35"
+            "src": "contracts/ERC20V2.sol:35"
           },
           {
             "contract": "ERC20",
             "label": "_allowances",
             "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
-            "src": "contracts/ERC20.sol:37"
+            "src": "contracts/ERC20V2.sol:37"
           },
           {
             "contract": "ERC20",
             "label": "_totalSupply",
             "type": "t_uint256",
-            "src": "contracts/ERC20.sol:39"
+            "src": "contracts/ERC20V2.sol:39"
           },
           {
             "contract": "ERC20",
             "label": "_name",
             "type": "t_string_storage",
-            "src": "contracts/ERC20.sol:41"
+            "src": "contracts/ERC20V2.sol:41"
           },
           {
             "contract": "ERC20",
             "label": "_symbol",
             "type": "t_string_storage",
-            "src": "contracts/ERC20.sol:42"
+            "src": "contracts/ERC20V2.sol:42"
+          }
+        ],
+        "types": {
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))"
+          },
+          "t_string_storage": {
+            "label": "string"
+          }
+        }
+      }
+    },
+    "8c1b7d4189a43e2cd5e3f59a19dc9f98005d62f74c8f92aba17760fdb1d38f91": {
+      "address": "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9",
+      "txHash": "0x083af55f4d64c89248e12cfc66acc297324a2bfb458f6f67a8df0b6e7d12b088",
+      "layout": {
+        "storage": [
+          {
+            "contract": "ERC20",
+            "label": "_balances",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "contracts/ERC20V2.sol:35"
+          },
+          {
+            "contract": "ERC20",
+            "label": "_allowances",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "src": "contracts/ERC20V2.sol:37"
+          },
+          {
+            "contract": "ERC20",
+            "label": "_totalSupply",
+            "type": "t_uint256",
+            "src": "contracts/ERC20V2.sol:39"
+          },
+          {
+            "contract": "ERC20",
+            "label": "_name",
+            "type": "t_string_storage",
+            "src": "contracts/ERC20V2.sol:41"
+          },
+          {
+            "contract": "ERC20",
+            "label": "_symbol",
+            "type": "t_string_storage",
+            "src": "contracts/ERC20V2.sol:42"
           }
         ],
         "types": {
